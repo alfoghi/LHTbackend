@@ -1,0 +1,20 @@
+{%extends 'store/main.html' %} {% load static %}
+<link rel="stylesheet" href="{% static 'css/main.css'%}" />
+
+{%block content%}
+<div class="row">
+  {% for product in products %}
+  <div class="col col-sm-6 col-lg-4">
+    <div class="card border-dark bg-transparent text-white mb-3">
+      <img src="{{product.imageURL}}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">{{product.name}}</h5>
+        <a href="#" class="btn btn-primary">Go </a>
+        <a class="btn btn-success" href="#"> View</a>
+        <h4>${{product.price}}</h4>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endblock content%}
