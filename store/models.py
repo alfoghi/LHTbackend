@@ -14,7 +14,10 @@ class Customer(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=200)
     price= models.FloatField(default=0)
-    description = models.CharField(null=True, max_length=200, blank=True)
+    description1 = models.CharField(null=True, max_length=200, blank=True)
+    description2 = models.CharField(null=True, max_length=200, blank=True)
+    description3 = models.CharField(null=True, max_length=200, blank=True)
+    description4 = models.CharField(null=True, max_length=200, blank=True)
     image = models.ImageField(null=True, blank=True)
     
     def __str__(self):

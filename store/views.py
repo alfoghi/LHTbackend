@@ -20,4 +20,10 @@ def checkout(request):
     return render(request, 'store/checkout.html',context)
     
 
+
+def imageViwer(requests, id):
+     products = Product.objects.get(id=id)
+     context= {"products":products}
+     return render(requests, "store/imagView.html",context)
+
     

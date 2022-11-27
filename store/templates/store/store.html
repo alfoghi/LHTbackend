@@ -9,8 +9,8 @@
       <img src="{{product.imageURL}}" class="card-img-top" alt="..." />
       <div class="card-body">
         <h5 class="card-title">{{product.name}}</h5>
-        <a href="#" class="btn btn-primary">Go </a>
-        <a class="btn btn-success" href="#"> View</a>
+        <a href="https://m.me/LibyanHighTech" class="btn btn-primary">ارسل رسالة  </a>
+        <a class="btn btn-success" href="{% url 'imageViwer' product.id %}"> View</a>
         <h4>${{product.price}}</h4>
       </div>
     </div>

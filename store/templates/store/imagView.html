@@ -1,0 +1,26 @@
+{%extends 'store/main.html' %} {% load static %}
+
+<link rel="stylesheet" href="{% static 'css/main.css'%}" />
+
+
+{% block content %}
+
+<div class=" mainDiv bg-dark card mb-3" style="max-width: 150%;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{{ products.image.url }}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title text-white"><strong> {{products.name}}</strong></h5>
+          <p class="card-text text-white ", style{ padang-top : 10% } >{{products.description1}} </p>
+          <p class="card-text text-white ", style{ padang-top : 10% } >{{products.description2}} </p>
+          <p class="card-text text-white ", style{ padang-top : 10% } >{{products.description3}} </p>
+          <p class="card-text text-white ", style{ padang-top : 10% } >{{products.description4}} </p>
+          <a href="https://m.me/LibyanHighTech" class="btn btn-primary">راسلنا علي الفيسبوك </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock content %}
